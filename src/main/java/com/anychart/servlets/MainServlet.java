@@ -38,7 +38,7 @@ public class MainServlet extends HttpServlet {
 
             req.setAttribute("chartData", new Gson().toJson(fruits));
             req.setAttribute("chartTitle", "Top 5 fruits");
-            response.setHeader("Access-Control-Allow-Origin", "*");
+            resp.setHeader("Access-Control-Allow-Origin", "*");
             req.getRequestDispatcher("/WEB-INF/views/index.jsp").forward(req, resp);
         } catch (SQLException se) {
             se.printStackTrace();
