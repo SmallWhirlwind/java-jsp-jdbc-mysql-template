@@ -6,5 +6,5 @@
   tasks: 
     - name: Copy project war
       copy:
-        src: target/java-jsp-jdbc-mysql-template.war
+        src: ../target/java-jsp-jdbc-mysql-template.war
         dest: /var/lib/tomcat7/webapps
